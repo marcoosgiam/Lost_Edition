@@ -20,7 +20,7 @@ local jokerInfo = {
                 card = card
             }
         end
-        if context.joker_main and card.ability.extra.chips > 0 then
+        if to_big(context.joker_main) and to_big(card.ability.extra.chips) > 0 then
             return {
                 chips = card.ability.extra.chips
             }
